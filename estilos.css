@@ -9,7 +9,30 @@ a
 {
 	color: #22BCE0;
 }
+footer
+{
+	background: #22BCE0;	
+	color: white;
+	padding: 1em;
+	text-align: center;
+}
+footer p:first-child
+{
+	margin-bottom: 0;
+}
+footer p:last-child
+{
+	margin-top: 0;
 
+}
+footer p:last-child:before
+{
+	content: "- ";
+}
+footer p:last-child:after
+{
+	content: " -";
+}
 header
 {
  background: #344B54;
@@ -66,14 +89,14 @@ nav ul li a
 	color: white;
 	text-decoration: none;
 }
-#publicar_nav
+nav ul #publicar_nav
 {
 	
 	position: absolute;
 	top: 0;
 	right: 0;
 }
-#publicar_nav a
+nav ul #publicar_nav a
 {
 	background: #22BCE0;
 	border-radius: 8px;
@@ -85,23 +108,69 @@ nav ul li a
 #contenido
 {
 	margin: 1em;
+	position: relative;
 }
-.item
+#contenido .item
 {
 	background: white;
-	border-bottom: 2px solid #22BCE0;
-
+	border-bottom: 3px solid #22BCE0;
+	margin-bottom: 3em;
+	min-height: 130px; /* para que la imagen se vaya abajo del todo en el item */
+	/* overflow: hidden; Lo quitamos para que la barra de abajo del articulo sobresalga */
 }
-
-.imagen_item img
+#contenido .item .imagen_item
 {
-	width: 100px;
+	float: left;
+	margin-right: 1em;
 }
+#contenido .item .imagen_item img
+{
+	width: 96px;
+}
+#contenido .item .titulo_item
+{
+	font-size: 1.2em;
+	font-style: italic;
+} 
+#contenido .item .titulo_item a
+{
+	color: #444;
+	text-decoration: none;
+}
+#contenido .item .autor_item
+{
+	color: #aaa;
+}
+#contenido .item .datos_item 
+{
+	color: #aaa;
+	margin-top: 0.5em;
+	text-align: right;
+}
+#contenido .item .datos_item .fecha_item
+{
+	padding-right: 1em;
+} 
 
-
-
-
-
+#contenido .item .datos_item .tag_item
+{
+	background: #F4502A;
+	border-radius: 8px;
+	color: white;
+	float: left;
+	padding: 0.2em 0.6em;
+	text-decoration: none;
+}
+#contenido .item .votacion
+{
+	background: white;
+	border-radius: 0 0 10px 10px;
+	left: 5%;
+	top: 100%; /* para situar la barra de votacion abajo */
+	padding: 0.3em 1em;
+	position: absolute;
+	width: 90%;
+}
 
 
 
