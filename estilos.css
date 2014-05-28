@@ -11,10 +11,13 @@ a
 }
 footer
 {
-	background: #22BCE0;	
+	background: #22BCE0;
+	bottom: 0;	
 	color: white;
 	padding: 1em;
+	position: absolute;
 	text-align: center;
+	width: 100%;
 }
 footer p:first-child
 {
