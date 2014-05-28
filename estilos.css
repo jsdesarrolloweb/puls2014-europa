@@ -108,7 +108,6 @@ nav ul #publicar_nav a
 #contenido
 {
 	margin: 1em;
-	position: relative;
 }
 #contenido .item
 {
@@ -116,6 +115,7 @@ nav ul #publicar_nav a
 	border-bottom: 3px solid #22BCE0;
 	margin-bottom: 3em;
 	min-height: 130px; /* para que la imagen se vaya abajo del todo en el item */
+	position: relative;
 	/* overflow: hidden; Lo quitamos para que la barra de abajo del articulo sobresalga */
 }
 #contenido .item .imagen_item
@@ -131,6 +131,7 @@ nav ul #publicar_nav a
 {
 	font-size: 1.2em;
 	font-style: italic;
+	padding-top: 1em; 
 } 
 #contenido .item .titulo_item a
 {
@@ -166,9 +167,10 @@ nav ul #publicar_nav a
 	background: white;
 	border-radius: 0 0 10px 10px;
 	left: 5%;
-	top: 100%; /* para situar la barra de votacion abajo */
+	margin-top: 0.2em; 
 	padding: 0.3em 1em;
 	position: absolute;
+	top: 100%; /* para situar la barra de votacion abajo */
 	width: 90%;
 }
 
